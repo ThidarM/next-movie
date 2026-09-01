@@ -19,7 +19,7 @@ async function fetchMovie(id:string):Promise<MovieType>{
 
 }
 
-async function fetchCard(id:string):Promise<PersonType>{
+async function fetchCard(id:string):Promise<PersonType[]>{
     const res=await fetch(
         `https://api.themoviedb.org/3/movie/${id}/credits`,
         {
@@ -34,7 +34,7 @@ async function fetchCard(id:string):Promise<PersonType>{
     return data.cast??[];
 }
 
-async function fetchVideo(id:string):Promise<VideoType>{
+async function fetchVideo(id:string):Promise<VideoType[]>{
     const res=await fetch(
         `https://api.themoviedb.org/3/movie/${id}/videos`,
         {
