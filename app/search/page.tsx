@@ -16,7 +16,7 @@ async function fetchSearch(q:string):Promise<MovieType[]>{
     return data.results??[];
 }
 
-export async function Search({searchParams,
+export default async function Search({searchParams,
 
 }:{searchParams:Promise<{q:string}>;
 }) {
