@@ -1,36 +1,142 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎬 Next Movie
 
-## Getting Started
+A modern movie discovery website built with **Next.js** and the **TMDB
+API**.
 
-First, run the development server:
+This project fetches movie information from The Movie Database (TMDB)
+and presents it through a responsive web interface. It is designed to
+run locally with Next.js and can be deployed to **Vercel**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Features
+
+-   🎥 Movie discovery powered by the TMDB API
+-   🔎 Movie data and poster images from TMDB
+-   📱 Responsive movie UI
+-   ⚡ Next.js App Router
+-   🎨 Component-based UI
+-   🔐 Environment-variable based API configuration
+-   ☁️ Ready to deploy on Vercel
+
+## 🛠️ Tech Stack
+
+-   **Next.js**
+-   **React**
+-   **TypeScript**
+-   **TMDB API**
+-   **Tailwind CSS / project UI components**
+-   **Vercel**
+
+------------------------------------------------------------------------
+
+## 🚀 Create the Project
+
+If you want to create a new Next.js project from scratch:
+
+``` bash
+npx create-next-app@latest next-movie
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+During setup, you can choose options such as:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+``` text
+TypeScript       → Yes
+ESLint            → Yes
+Tailwind CSS      → Yes
+src/ directory    → No
+App Router        → Yes
+Turbopack         → Yes
+Import alias      → Yes
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Then enter the project:
 
-## Learn More
+``` bash
+cd next-movie
+```
 
-To learn more about Next.js, take a look at the following resources:
+Install the dependencies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+``` bash
+npm install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Start the development server:
 
-## Deploy on Vercel
+``` bash
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Open:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+``` text
+http://localhost:3000
+```
+
+------------------------------------------------------------------------
+
+## 📁 Project Structure
+
+The project currently follows a structure similar to:
+
+``` text
+next-movie/
+│
+├── app/
+│   ├── ...                    # Next.js App Router pages, layouts and routes
+│   └── ...
+│
+├── components/
+│   └── ...                    # Reusable UI components
+│
+├── lib/
+│   └── ...                    # Utilities, API helpers and shared logic
+│
+├── public/
+│   └── ...                    # Static assets
+│
+├── types/
+│   └── ...                    # TypeScript types/interfaces
+│
+├── .env.local                 # Local environment variables (do not commit)
+├── .gitignore                 # Git ignore rules
+├── components.json            # UI component configuration
+├── eslint.config.mjs          # ESLint configuration
+├── next.config.ts             # Next.js configuration
+├── package.json               # Project dependencies and scripts
+├── package-lock.json          # npm dependency lock file
+├── postcss.config.mjs         # PostCSS configuration
+├── README.md                  # Project documentation
+└── tsconfig.json              # TypeScript configuration
+```
+
+> The exact files inside `app/`, `components/`, `lib/`, and `types/` may
+> change as the project grows.
+
+------------------------------------------------------------------------
+
+## 📚 Resources
+
+### Next.js
+
+-   https://nextjs.org/docs
+-   https://nextjs.org/learn
+
+### TMDB
+
+-   https://www.themoviedb.org/
+-   https://developer.themoviedb.org/docs/getting-started
+-   https://developer.themoviedb.org/docs/authentication-application
+-   https://developer.themoviedb.org/docs/image-basics
+
+### Vercel
+
+-   https://vercel.com/
+
+------------------------------------------------------------------------
+
+## 📄 License
+
+This project is for learning and development purposes.
+
+TMDB data and images are subject to TMDB's terms and policies. See the
+official TMDB documentation for current requirements.
