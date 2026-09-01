@@ -83,7 +83,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
 				</header>
 
 				<div className="mx-auto flex w-full max-w-7xl flex-1">
-					<aside className="sticky top-[4.25rem] hidden h-[calc(100vh-4.25rem)] w-56 shrink-0 overflow-y-auto border-r border-white/8 px-4 py-6 lg:block">
+					<aside className="sticky top-[4.25rem] z-10 hidden h-[calc(100vh-4.25rem)] w-56 shrink-0 overflow-y-auto border-r border-white/8 px-4 py-6 lg:block">
 						<p className="mb-3 px-3 text-[0.7rem] font-semibold tracking-[0.2em] text-muted-foreground uppercase">
 							Genres
 						</p>

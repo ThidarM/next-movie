@@ -55,7 +55,7 @@ export default async function PersonPage({
     return (
         <div>
             <section className="mb-10 grid gap-6 md:grid-cols-[220px_1fr] md:gap-8">
-                <div>
+                <div className="relative aspect-[2/3] w-full max-w-[220px]">
                     {photo?(
                         <Image
                             src={photo}

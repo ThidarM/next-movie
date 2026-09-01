@@ -87,9 +87,9 @@ export default async function MovieDetail({
                         src={backdrop}
                         alt=""
                         fill
-                        priority
                         sizes="(max-width:1280px) 100vw,1280px"
                         className="object-cover"
+                        priority
                         />
                     ):(
                         <div className="absolute inset-0 bg-muted"/>
@@ -180,14 +180,14 @@ export default async function MovieDetail({
                         key={person.id}
                         href={`/person/${person.id}`}
                         className="group">
-                            <div className="aspect-square w-24 overflow-hidden rounded-full bg-muted sm:w-32">
+                            <div className="relative aspect-square w-24 overflow-hidden rounded-full bg-muted sm:w-32">
                                 {photo ?(
                                     <Image 
                                     src={photo}
                                     alt={person.name}
                                     fill
                                     sizes="180px"
-                                    className="object-cover r transition-transform duration-500 group-hover:scale-105"
+                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                                     />
                                     ):(
                                         <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
